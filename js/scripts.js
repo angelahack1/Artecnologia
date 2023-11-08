@@ -1,7 +1,6 @@
 /*!
-* Start Bootstrap - Business Casual v7.0.9 (https://startbootstrap.com/theme/business-casual)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-business-casual/blob/master/LICENSE)
+* Start Bootstrap - Artecnología alias Aixkare v8.0.0 (https://aixkare.com)
+* Copyright Artecnología 2023
 */
 // Highlights current date on contact page
 window.addEventListener('DOMContentLoaded', event => {

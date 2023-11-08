@@ -594,7 +594,7 @@ progress {
 }
 
 .img-fluid {
-  max-width: 100%;
+  max-width: 530px;
   height: auto;
 }
 
@@ -3715,6 +3715,13 @@ textarea.form-control-lg {
   margin-top: 200px;
   margin-bottom: 300px;
 }
+
+@media (max-width: 575.98px) {
+  .img-fluid {
+     max-width: 100%;
+     height: auto;
+  }
+ }
 /* } */
 
 .nav-tabs {

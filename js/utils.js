@@ -1,5 +1,6 @@
 /* Java Script Utilities for Artecnología */
 /* Author: Ángela López Mendoza           */
+/* Copyright Artecnología 2023            */
 /* AixKare/Artecnología 11/2023           */
 
 (function() {
