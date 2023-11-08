@@ -3716,30 +3716,21 @@ textarea.form-control-lg {
   margin-bottom: 300px;
 }
 
-@media (min-width: 0px ) and (max-width: 500px) {
+@media (min-width: 0px ) and (max-width: 1000px) {
   .img-fluid {
      width: 100%;
      float: right;
      position: relative;
-     z-index: auto;
+     z-index: inherited;
   }
  }
  
- @media (min-width: 501px) and (max-width: 800px) {
-  .img-fluid {
-     width: 90%;
-     float: right;
-     position: relative;
-    z-index: auto;
-  }
- }
-
- @media (min-width: 801px) {
+@media (min-width: 1001px) {
   .img-fluid {
      width: 80%;
      float: right;
      position: relative;
-    z-index: auto;
+     z-index: auto;
   }
  } 
  /*ALM Last change 08/11/2023 at 1:00 am. (@media updates)*/
