@@ -1,0 +1,21 @@
+{
+    "name": "server",
+    "version": "1.0.0",
+    "description": "server for ana ornament",
+    "main": "index.js",
+    "scripts": {
+      "start": "nodemon index.js"
+    },
+    "author": "Angela Lopez",
+    "license": "ISC",
+    "dependencies": {
+      "express": "^4.18.2",
+      "nodemon": "^2.0.20"
+    },
+    "name": "nodemon",
+    "homepage": "http://3.17.5.175:3000",
+    "nodemonConfig": {
+      "ignore": ["**/*.err", "**/*.out", "**/*.json"],
+      "delay": 2000
+    }
+  }
