@@ -3721,6 +3721,7 @@ textarea.form-control-lg {
      width: 100%;
      float: right;
      position: relative;
+     z-index: auto;
   }
  }
  
@@ -3729,22 +3730,16 @@ textarea.form-control-lg {
      width: 90%;
      float: right;
      position: relative;
+    z-index: auto;
   }
  }
 
- @media (min-width: 801px) and (max-width: 1000px) {
+ @media (min-width: 801px) {
   .img-fluid {
      width: 80%;
      float: right;
      position: relative;
-  }
- }
- 
- @media (min-width: 1000px) {
-  .img-fluid {
-     width: 80%;
-     float: right;
-     position: relative;
+    z-index: auto;
   }
  } 
  /*ALM Last change 08/11/2023 at 1:00 am. (@media updates)*/
