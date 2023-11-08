@@ -3719,19 +3719,21 @@ textarea.form-control-lg {
 @media (max-width: 500px) {
   .img-fluid {
      width: 100%;
+     float: center;
   }
  }
  
  @media (min-width: 501px) and (max-width: 900px) {
   .img-fluid {
      width: 90%;
+     float: center;
   }
  }
  
  @media (min-width: 901px) {
   .img-fluid {
-     width: 80%;
-     float: right;
+     width: 90%;
+     float: center;
      position: relative;
   }
  } 
