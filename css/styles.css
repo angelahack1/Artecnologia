@@ -594,7 +594,7 @@ progress {
 }
 
 .img-fluid {
-  max-width: 530px;
+  max-width: 100%;
   height: auto;
 }
 
@@ -3721,19 +3721,19 @@ textarea.form-control-lg {
      width: 100%;
      float: right;
      position: relative;
-     z-index: inherited;
+     z-index: auto;
   }
  }
  
 @media (min-width: 1001px) {
   .img-fluid {
-     width: 80%;
+     width: 60%;
      float: right;
      position: relative;
      z-index: auto;
   }
  } 
- /*ALM Last change 08/11/2023 at 1:00 am. (@media updates)*/
+ /*ALM Last change 08/11/2023 at 5:57 pm. (@media updates)*/
 /* } */
 
 .nav-tabs {
