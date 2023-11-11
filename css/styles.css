@@ -3693,6 +3693,20 @@ textarea.form-control-lg {
   transition: none;
 }
 
+.nav-link-disabled-outside, 
+.nav-link-disabled-outside:hover, 
+.nav-link-disabled-outside:focus {
+  display: block;
+  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  font-size: var(--bs-nav-link-font-size);
+  font-weight: 800;
+  text-decoration: none;
+  color: var(--bs-gray);
+  pointer-events: none;
+  cursor: default;
+  transition: none;
+}
+
 .contact-header {
   text-align: left !important;
 }
