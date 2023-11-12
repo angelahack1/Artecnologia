@@ -2,13 +2,32 @@ const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
 const http = require('http');
-const nodemailer = require('nodemailer');
 const { MongoClient } = require('mongodb');
+const { time } = require('console');
 
 const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, './')));
+
+var client = null;
+
+async function run(dateArg, timeArg, emailArg, commentArg, ipArg, ipsArg) {
+    try {
+        await client.connect();
+        const db = client.db('artecnologia_db');
+        const collection = db.collection('req_for_comments');
+        const document = { 'date': dateArg, 'time': timeArg, 'email': emailArg, 'comment': commentArg, 'ip': ipArg, 'ips': ipsArg };
+        console.log("Document to  insert: ", document);
+        const result = await collection.insertOne(document);
+        console.log('Successfully sent insertion of document with _id: ${result.insertedId}');
+    } catch (error) {
+        console.error('Failed to insert document: ${error}');
+    } finally {
+        await client.close();
+        console.log('...Finnaly Disconnected from MongoDB.');
+    }
+}
 
 app.post('/contact_form', (req, res) => {
     const formData = req.body;
@@ -24,24 +43,11 @@ app.post('/contact_form', (req, res) => {
     console.log(ips, '\n');
     }
     console.log('Form data received at: (',dateFormatted,' ',timeFormatted,') in JSON format:', formData);
-
-    var client = MongoClient.connect(
-        'mongodb://angelalm:1164Louder@docdb-aixkare2.czszlu5pf7si.us-east-1.docdb.amazonaws.com:27017/artecnologia_db?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false',
-        {
-          tlsCAFile: 'global-bundle.pem'
-        },
-        function(err, client) {
-            if(err)
-                throw err;
-            db = client.db('artecnologia_db');
-            col = db.collection('req_for_comments');
-            col.insertOne({'date': dateFormatted, 'time': timeFormatted, 'email': formData.email, 'comment': formData.texto, 'ip': remote_ip, 'ips': forwarded_ips}, function(err, result) {
-                console.log(result);
-                client.close();
-           });
-        });
-        res.redirect('index.html');
-    });
+    const uri = 'mongodb://angelalm:1164Louder@ec2-34-207-118-114.compute-1.amazonaws.com:27017/artecnologia_db?retryWrites=true&w=majority';
+    console.log('Connecting to MongoDB...');
+    client = new MongoClient(uri);
+    run(dateFormatted, timeFormatted, formData.email, formData.texto, remote_ip, forwarded_ips).catch(console.dir);
+});
 
 app.listen(3000, function() {
     console.log('Server is running on port 3000');
