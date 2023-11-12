@@ -36,9 +36,9 @@ app.post('/contact_form', (req, res) => {
             col = db.collection('req_for_comments');
             col.insertOne({'date': dateFormatted, 'time': timeFormatted, 'email': formData.email, 'comment': formData.texto, 'ip': remote_ip, 'ips': forwarded_ips}, function(err, result) {
                 console.log(result);
+                client.close();
            });
         });
-    client.close();
     res.redirect('index.html');
     });
 
