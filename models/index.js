@@ -1,8 +1,6 @@
 // @ts-check
 import { initSchema } from '@aws-amplify/datastore';
-import { schema } from './schema';
-
-
+import { schema } from '../models/schema.js';
 
 const { Comments } = initSchema(schema);
 

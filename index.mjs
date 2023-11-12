@@ -5,7 +5,7 @@ import bodyParser from 'body-parser';
 import { MongoClient } from 'mongodb';
 import { Amplify } from 'aws-amplify'
 import awsmobile from './aws-exports.js'
-import { API } from './graphql/mutations'
+import { GraphQLAPI } from '@aws-amplify/api-graphql/lib/index.js'
 
 Amplify.configure(awsmobile)
 
@@ -36,7 +36,7 @@ async function run(dateArg, timeArg, emailArg, commentArg, ipArg, ipsArg) {
     }
 
     try { 
-        const newComments = await API.graphql({ query: createComments, variables: { input: { "date": dateArg,
+        const newComments = await GraphQLAPI.graphql({ query: createComments, variables: { input: { "date": dateArg,
                                                                                              "time": timeArg,
                                                                                              "email": emailArg,
                                                                                              "comment": commentArg,

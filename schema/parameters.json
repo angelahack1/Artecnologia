@@ -1,0 +1,8 @@
+{
+    "AppSyncApiName": "Artecnologia",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "AuthModeLastUpdated": "2023-11-12T05:54:27.607Z",
+    "S3DeploymentBucket": "amplify-amplify74c2dc8c21234-staging-235546-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/dddf2ad49610c39699f1a67f452adf0e3f758bda"
+}
