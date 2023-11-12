@@ -24,7 +24,7 @@ app.post('/contact_form', (req, res) => {
     console.log(ips, '\n');
     }
     console.log('Form data received at: (',dateFormatted,' ',timeFormatted,') in JSON format:', formData);
-    var retvals = "";
+
     var client = MongoClient.connect(
         'mongodb://angelalm:1164Louder@docdb-aixkare2.czszlu5pf7si.us-east-1.docdb.amazonaws.com:27017/artecnologia_db?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false',
         {
@@ -35,13 +35,12 @@ app.post('/contact_form', (req, res) => {
                 throw err;
             db = client.db('artecnologia_db');
             col = db.collection('req_for_comments');
-            retvals = col.insertOne({'date': dateFormatted, 'time': timeFormatted, 'email': formData.email, 'comment': formData.texto, 'ip': remote_ip, 'ips': forwarded_ips}, function(err, result) {
+            col.insertOne({'date': dateFormatted, 'time': timeFormatted, 'email': formData.email, 'comment': formData.texto, 'ip': remote_ip, 'ips': forwarded_ips}, function(err, result) {
                 console.log(result);
-                res.send(result);
                 client.close();
            });
         });
-    res.send(retvals);
+        res.redirect('index.html');
     });
 
 app.listen(3000, function() {
