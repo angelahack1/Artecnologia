@@ -1,11 +1,11 @@
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
-const http = require('http');
 const { MongoClient } = require('mongodb');
-const { time } = require('console');
-import { API } from "aws-amplify";
-import { createComments } from './graphql/mutations';
+import { Amplify } from 'aws-amplify'
+import awsconfig from './aws-exports'
+
+Amplify.configure(awsconfig)
 
 const app = express();
 app.use(bodyParser.json());
