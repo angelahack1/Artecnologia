@@ -5,6 +5,7 @@ import bodyParser from 'body-parser';
 import { MongoClient } from 'mongodb';
 import { Amplify } from 'aws-amplify'
 import awsmobile from './aws-exports.js'
+import { API } from './graphql/mutations'
 
 Amplify.configure(awsmobile)
 
