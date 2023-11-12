@@ -2,11 +2,11 @@
   "name": "artecnologia",
   "version": "1.0.0",
   "description": "Artecnología, sitio web",
-  "main": "index.js",
+  "main": "index.mjs",
   "type": "module",
   "scripts": {
-    "start": "node index.js",
-    "test": "node index.js"
+    "start": "node index.mjs",
+    "test": "node index.mjs"
   },
   "keywords": [
     "Artecnologia,Artecnología,AixKare"
