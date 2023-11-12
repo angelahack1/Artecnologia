@@ -26,9 +26,9 @@ async function run(dateArg, timeArg, emailArg, commentArg, ipArg, ipsArg) {
         const document = { 'date': dateArg, 'time': timeArg, 'email': emailArg, 'comment': commentArg, 'ip': ipArg, 'ips': ipsArg };
         console.log("Document to  insert: ", document);
         const result = await collection.insertOne(document);
-        console.log('Successfully sent insertion of document with _id: ${result.insertedId}');
+        console.log('Successfully sent insertion of document with _id: ', result.insertedId);
     } catch (error) {
-        console.log('Failed to insert document: ${error}');
+        console.log('Failed to insert document: ', error);
     } finally {
         await client.close();
         console.log('...Finnaly Disconnected from MongoDB.');
@@ -69,6 +69,6 @@ app.post('/contact_form', (req, res) => {
     run(dateFormatted, timeFormatted, formData.email, formData.texto, remote_ip, forwarded_ips).catch(console.dir);
 });
 
-app.listen(3000, function() {
-    console.log('Server is running on port 3000');
+app.listen(80, function() {
+    console.log('Server is running on port 80');
 });
