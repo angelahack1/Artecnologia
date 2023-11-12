@@ -22,7 +22,7 @@ async function run(dateArg, timeArg, emailArg, commentArg, ipArg, ipsArg) {
         const result = await collection.insertOne(document);
         console.log('Successfully sent insertion of document with _id: ${result.insertedId}');
     } catch (error) {
-        console.error('Failed to insert document: ${error}');
+        console.log('Failed to insert document: ${error}');
     } finally {
         await client.close();
         console.log('...Finnaly Disconnected from MongoDB.');
@@ -40,7 +40,7 @@ app.post('/contact_form', (req, res) => {
     console.log('Time: ', timeFormatted);
     console.log('Forwarded array of IPs: ');
     for(ips in req.ips) {
-    console.log(ips, '\n');
+        console.log(ips, '\n');
     }
     console.log('Form data received at: (',dateFormatted,' ',timeFormatted,') in JSON format:', formData);
     const uri = 'mongodb://angelalm:1164Louder@ec2-34-207-118-114.compute-1.amazonaws.com:27017/artecnologia_db?retryWrites=true&w=majority';
