@@ -4,6 +4,8 @@ const bodyParser = require('body-parser');
 const http = require('http');
 const { MongoClient } = require('mongodb');
 const { time } = require('console');
+import { API } from "aws-amplify";
+import { createComments } from './graphql/mutations';
 
 const app = express();
 app.use(bodyParser.json());
@@ -26,6 +28,20 @@ async function run(dateArg, timeArg, emailArg, commentArg, ipArg, ipsArg) {
     } finally {
         await client.close();
         console.log('...Finnaly Disconnected from MongoDB.');
+    }
+
+    try { 
+        const newComments = await API.graphql({ query: createComments, variables: { input: { "date": dateArg,
+                                                                                             "time": timeArg,
+                                                                                             "email": emailArg,
+                                                                                             "comment": commentArg,
+                                                                                             "ip": ipArg
+                                                                                            }
+                                                                                  }
+                                              });
+        console.log('Successfully sent insertion of GraphQL data.');
+    } catch(error) {
+        console.log('Failed to create Data: ${error}');
     }
 }
 
