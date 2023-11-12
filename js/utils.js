@@ -73,7 +73,7 @@ function addValidationInClient() {
         } else {
             handleFormSubmit(event);
             event.preventDefault();
-            window.top.location.href = '/thanks.html';
+           // window.top.location.href = '/thanks.html';
         }
     });
 }
