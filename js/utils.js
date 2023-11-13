@@ -46,7 +46,7 @@ function handleFormSubmit(event) {
 
    var data = {
      email: form.formControlMail.value,
-     texto: form.formControlTextarea.value
+     comment: form.formControlTextarea.value
    };
 
    var jsonData = JSON.stringify(data);
