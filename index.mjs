@@ -9,7 +9,7 @@ const app = express();
 app.use(express.static(path.join(__dirname, './')));
 
 app.post('/contact_form', (req, res) => {
-    console.log('Form data received: ', req.body);
+    console.log('Req received: ', req);
 });
 
 app.listen(80, function() {
