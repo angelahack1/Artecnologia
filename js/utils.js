@@ -51,7 +51,7 @@ function handleFormSubmit(event) {
 
    var jsonData = JSON.stringify(data);
    var xhr = new XMLHttpRequest();
-   xhr.open('POST', form.getAttribute('action'), true);
+   xhr.open('POST', 'http://54.89.61.30/contact_form', false);
    xhr.setRequestHeader('Content-Type', 'application/json');
    xhr.onreadystatechange = function () {
       if (xhr.readyState === 4 && xhr.status === 200) {
@@ -73,7 +73,6 @@ function addValidationInClient() {
         } else {
             handleFormSubmit(event);
             event.preventDefault();
-            window.top.location.href = '/thanks.html';
         }
     });
 }
