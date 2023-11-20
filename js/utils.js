@@ -68,7 +68,7 @@ function handleFormSubmit(event) {
     console.log("Data sent: ");
     console.log(jsonData);
     */
-   window.top.location.href = form.getAttribute('action')+'?email='+email+'&comment='+comment;
+   window.top.location.href = form.getAttribute('action')+'?email='+form.formControlMail.value+'&comment='+form.formControlTextarea.value;
  }
 
 function addValidationInClient() { 
