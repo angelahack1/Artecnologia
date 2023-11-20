@@ -3,11 +3,11 @@
 /* Copyright Artecnología 2023            */
 /* AixKare/Artecnología 11/2023           */
 
-(function() {
+$(function() {
     console.log("Validation of form is gonna be loaded...");
     addValidationInClient();
     console.log("Validation of form loaded OK.");
-})();
+});
 
 function validateEmail(email) {
     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -51,7 +51,7 @@ function handleFormSubmit(event) {
 
    var jsonData = JSON.stringify(data);
    var xhr = new XMLHttpRequest();
-   xhr.open('POST', 'http://'+form.getAttribute('action'), true);
+   xhr.open('POST', form.getAttribute('action'), true);
    xhr.setRequestHeader('Content-Type', 'application/json');
    xhr.onreadystatechange = function () {
       if (xhr.readyState === 4 && xhr.status === 200) {
