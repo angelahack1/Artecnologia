@@ -48,16 +48,15 @@ function handleFormSubmit(event) {
      email: form.formControlMail.value,
      comment: form.formControlTextarea.value
    };
-
-   /*
+   
    var jsonData = JSON.stringify(data);
    var xhr = new XMLHttpRequest();
    xhr.open('POST', form.getAttribute('action'), true);
+   /*
    xhr.setRequestHeader('Content-Type', 'application/json');
-   xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
-   xhr.setRequestHeader('Access-Control-Allow-Headers', 'Content-Type');
-   xhr.setRequestHeader('Access-Control-Allow-Origin', 'https://www.artecnologia.aixkare.com');
-
+   xhr.setRequestHeader('Access-Control-Request-Method', 'POST');
+   xhr.setRequestHeader('Access-Control-Request-Headers', 'Content-Type, Accept');
+   */
    xhr.onreadystatechange = function () {
       if (xhr.readyState === 4 && xhr.status === 200) {
         console.log('Success!');
@@ -67,8 +66,8 @@ function handleFormSubmit(event) {
     xhr.send(jsonData);
     console.log("Data sent: ");
     console.log(jsonData);
-    */
-   window.top.location.href = form.getAttribute('action')+'?email='+form.formControlMail.value+'&comment='+form.formControlTextarea.value;
+    
+    //window.top.location.href = form.getAttribute('action')+'?email='+form.formControlMail.value+'&comment='+form.formControlTextarea.value;
  }
 
 function addValidationInClient() { 
@@ -80,6 +79,7 @@ function addValidationInClient() {
         } else {
             handleFormSubmit(event);
             event.preventDefault();
+            window.top.location.href = "https://www.artecnologia.aixkare.com/thanks.html";
         }
     });
 }
