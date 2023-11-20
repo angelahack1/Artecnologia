@@ -53,6 +53,10 @@ function handleFormSubmit(event) {
    var xhr = new XMLHttpRequest();
    xhr.open('POST', form.getAttribute('action'), true);
    xhr.setRequestHeader('Content-Type', 'application/json');
+   xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+   xhr.setRequestHeader('Access-Control-Allow-Headers', 'Content-Type');
+   xhr.setRequestHeader('Access-Control-Allow-Origin', 'https://www.artecnologia.aixkare.com');
+
    xhr.onreadystatechange = function () {
       if (xhr.readyState === 4 && xhr.status === 200) {
         console.log('Success!');
