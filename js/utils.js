@@ -52,8 +52,8 @@ function handleFormSubmit(event) {
    var jsonData = JSON.stringify(data);
    var xhr = new XMLHttpRequest();
    xhr.open('POST', form.getAttribute('action'), true);
-   /*
    xhr.setRequestHeader('Content-Type', 'application/json');
+   /*
    xhr.setRequestHeader('Access-Control-Request-Method', 'POST');
    xhr.setRequestHeader('Access-Control-Request-Headers', 'Content-Type, Accept');
    */
