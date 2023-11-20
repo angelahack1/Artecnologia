@@ -49,6 +49,7 @@ function handleFormSubmit(event) {
      comment: form.formControlTextarea.value
    };
 
+   /*
    var jsonData = JSON.stringify(data);
    var xhr = new XMLHttpRequest();
    xhr.open('POST', form.getAttribute('action'), true);
@@ -66,6 +67,8 @@ function handleFormSubmit(event) {
     xhr.send(jsonData);
     console.log("Data sent: ");
     console.log(jsonData);
+    */
+   window.top.location.href = form.getAttribute('action')+'?email='+email+'&comment='+comment;
  }
 
 function addValidationInClient() { 
