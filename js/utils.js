@@ -69,7 +69,7 @@ function handleFormSubmit(event) {
     console.log("Data sent: ");
     console.log(jsonData);
     */
-    window.top.location.href = form.getAttribute('action')+'?email='+form.formControlMail.value+'&comment='+form.formControlTextarea.value;
+    window.top.location.href = form.getAttribute('action')+'&from=artecnologia&email='+form.formControlMail.value+'&comment='+form.formControlTextarea.value;
  }
 
 function addValidationInClient() { 
