@@ -34,6 +34,22 @@ class LanguageContainer {
         this._textStorePageEng = "Store";
         this._textStorePageSpa = "Tienda";
         this._textStorePagePor = "Loja";
+        this._altTextProductDigitalFrameEng = "Product: digital frame";
+        this._altTextProductDigitalFrameSpa = "Producto: portaretrato digital";
+        this._altTextProductDigitalFramePor = "Produco: moldura digital";
+        this._textSpanHeadingUpperEng = "Art of";
+        this._textSpanHeadingUpperSpa = "Arte de";
+        this._textSpanHeadingUpperPor = "Arte de";
+        this._textSpanHeadingLowerEng = "Owing and/or Giving";
+        this._textSpanHeadingLowerSpa = "Tener y/o Regalar";
+        this._textSpanHeadingLowerPor = "Ter e/ou Dar";
+        this._textParagraphIntroEng = "With a cultural special touch, and technological usage, through products which inspires your sense of belonging and comfort.";
+        this._textParagraphIntroSpa = "Con un sentido cultural y usabilidad tecnológica, a través de productos que inspiran tu pertenencia y confort.";
+        this._textParagraphIntroPor = "Com sentido cultural e usabilidade tecnológica, através de produtos que inspiram o seu pertencimento e conforto.";
+        this._textAnchorLetYouKnowOurProductsEng = "Let you know our products!";
+        this._textAnchorLetYouKnowOurProductsSpa = "Conoce nuestros productos!";
+        this._textAnchorLetYouKnowOurProductsPor = "Conheça nossos produtos!";
+
 
 
         this._textBannerAIEng = "AI eXtended for Healthcare.";
@@ -265,6 +281,15 @@ class LanguageContainer {
         }
     }
 
+    changeAltToImg(object, alt) {
+        if(typeof object != 'undefined' && (object != null) ) {
+            object.setAttribute("alt", alt);
+            console.log("Object: "+object+", updated to new alt content");
+        } else {
+            console.log("Object not defined, setting action: <"+object+">");
+        }
+    }
+
     getActualLangOnActualLang() {
         switch(this.lang) {
             case 'en':
@@ -300,7 +325,28 @@ class LanguageContainer {
                 this.changeInnerTextToObject($("#anchorProducts")[0],this._textProductsPageEng);
                 this.changeInnerTextToObject($("#anchorContact")[0],this._textContactPageEng);
                 this.changeInnerTextToObject($("#anchorStore")[0],this._textStorePageEng);
+                this.changeAltToImg($("#imgProductSample")[0], this._altTextProductDigitalFrameEng);
+                this.changeInnerTextToObject($("#spanHeadingUpper")[0], this._textSpanHeadingUpperEng);
+                this.changeInnerTextToObject($("#spanHeadingLower")[0], this._textSpanHeadingLowerEng);
+                this.changeInnerTextToObject($("#paragraphIntro")[0], this._textParagraphIntroEng);
+                this.changeInnerTextToObject($("#anchorLetYouKnow")[0], this._textAnchorLetYouKnowOurProductsEng);
 
+
+
+
+/*
+
+        this._textSpanHeadingUpperEng = "Art of";
+        this._textSpanHeadingUpperSpa = "Arte de";
+        this._textSpanHeadingUpperpor = "Arte de";
+        this._textSpanHeadingLowerEng = "Owing and/or Giving";
+        this._textSpanHeadingLowerSpa = "Tener y/o Regalar";
+        this._textSpanHeadingLowerpor = "Ter e/ou Dar";
+        this._textParagraphIntroEng = "With a cultural special touch, and technological usage, through products which inspires your sense of belonging and comfort.";
+        this._textParagraphIntroSpa = "Con un sentido cultural y usabilidad tecnológica, a través de productos que inspiran tu pertenencia y confort.";
+        this._textParagraphIntroPor = "Com sentido cultural e usabilidade tecnológica, através de produtos que inspiram o seu pertencimento e conforto.";
+
+*/
 
 /*
                 this.changeInnerTextToObject($("#home")[0],this._textMainPageEng);
@@ -357,6 +403,11 @@ class LanguageContainer {
                 this.changeInnerTextToObject($("#anchorProducts")[0],this._textProductsPageSpa);
                 this.changeInnerTextToObject($("#anchorContact")[0],this._textContactPageSpa);
                 this.changeInnerTextToObject($("#anchorStore")[0],this._textStorePageSpa);
+                this.changeAltToImg($("#imgProductSample")[0], this._altTextProductDigitalFrameSpa);
+                this.changeInnerTextToObject($("#spanHeadingUpper")[0], this._textSpanHeadingUpperSpa);
+                this.changeInnerTextToObject($("#spanHeadingLower")[0], this._textSpanHeadingLowerSpa);
+                this.changeInnerTextToObject($("#paragraphIntro")[0], this._textParagraphIntroSpa);
+                this.changeInnerTextToObject($("#anchorLetYouKnow")[0], this._textAnchorLetYouKnowOurProductsSpa);
 
 
                 Cookies.set('lang', 'es', { expires: 7 });
@@ -371,6 +422,11 @@ class LanguageContainer {
                 this.changeInnerTextToObject($("#anchorProducts")[0],this._textProductsPagePor);
                 this.changeInnerTextToObject($("#anchorContact")[0],this._textContactPagePor);
                 this.changeInnerTextToObject($("#anchorStore")[0],this._textStorePagePor);
+                this.changeAltToImg($("#imgProductSample")[0], this._altTextProductDigitalFramePor);
+                this.changeInnerTextToObject($("#spanHeadingUpper")[0], this._textSpanHeadingUpperPor);
+                this.changeInnerTextToObject($("#spanHeadingLower")[0], this._textSpanHeadingLowerPor);
+                this.changeInnerTextToObject($("#paragraphIntro")[0], this._textParagraphIntroPor);
+                this.changeInnerTextToObject($("#anchorLetYouKnow")[0], this._textAnchorLetYouKnowOurProductsPor);
 
 
                 Cookies.set('lang', 'pt', { expires: 7 });
