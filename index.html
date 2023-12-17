@@ -11,22 +11,32 @@
         <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
         <link href="css/bootstrap.min.css" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
+        <script type="text/javascript">
+            var _langContainer = null;
+            var _lang = null;
+            const searchParams = new URLSearchParams(window.location.search);
+            if(typeof searchParams != 'undefined' && (searchParams != null) & searchParams.has('lang') ) {
+              _lang = searchParams.get('lang');
+            }
+        </script>
+        <script src="js/jquery.js"></script>
         <script src="js/holder.js"></script>
+        <script src="js/js.cookie.js"></script>
     </head>
     <body>
         <header>
             <h1 class="site-heading text-center text-faded d-none d-lg-block">
-                <span class="site-heading-upper text-primary mb-3">
+                <span id="companyAcronim" class="site-heading-upper text-primary mb-3">
                     Artecnología
                 </span>
-                <span class="site-heading-lower">
+                <span id="companyName" class="site-heading-lower">
                     Arte y Tecnología juntos
                 </span>
             </h1>
         </header>
         <nav class="row navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
             <div class="col-10 container">
-                <a class="navbar-brand 
+                <a id="navCompanyName" class="navbar-brand 
                           text-uppercase 
                           fw-bold 
                           d-lg-none" 
@@ -46,23 +56,23 @@
                      id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item px-lg-4">
-                            <a class="nav-link-disabled-inside text-uppercase">
+                            <a id="anchorMainPage" class="nav-link-disabled-inside text-uppercase">
                                 Páginal principal</a>
                         </li>
                         <li class="nav-item px-lg-4">
-                            <a class="nav-link text-uppercase" 
+                            <a id="anchorAbout" class="nav-link text-uppercase" 
                                href="about.html">Acerca de Artecnología</a>
                         </li>
                         <li class="nav-item px-lg-4">
-                            <a class="nav-link-disabled-outside text-uppercase" 
+                            <a id="anchorProducts" class="nav-link-disabled-outside text-uppercase" 
                                href="products.html">Productos</a>
                         </li>
                         <li class="nav-item px-lg-4">
-                            <a class="nav-link-disabled-outside text-uppercase" 
+                            <a id="anchorStore" class="nav-link-disabled-outside text-uppercase" 
                                href="store.html">Tienda</a>
                         </li>
                         <li class="nav-item px-lg-4">
-                            <a class="nav-link text-uppercase" 
+                            <a id="anchorContact" class="nav-link text-uppercase" 
                                href="contact.html">Contacto </a>
                         </li>
                     </ul>
@@ -92,7 +102,7 @@
         <section class="page-section clearfix">
             <div class="container">
                 <div class="intro">
-                    <img class="img-fluid rounded" 
+                    <img id="imgProductSample" class="img-fluid rounded" 
                                 src="assets/img/sample_frame_holder.jpg" 
                                 alt="Producto portaretrato digital" />
                     <div class="intro-text 
@@ -102,18 +112,18 @@
                                 p-5 
                                 rounded">
                         <h2 class="section-heading mb-6">
-                            <span class="section-heading-upper">
+                            <span id="spanHeadingUpper" class="section-heading-upper">
                                 Arte de
                             </span>
-                            <span class="section-heading-lower">
+                            <span id="spanHeadingLower" class="section-heading-lower">
                                 Poseer y Regalar
                             </span>
                         </h2>
-                        <p class="mb-3">
+                        <p id="paragraphIntro" class="mb-3">
                             Con un sentido cultural y usabilidad tecnológica, a través de productos que inspiran tu pertenencia y confort.
                         </p>
                         <div class="intro-button mx-auto">
-                            <a class="btn btn-primary btn-xl" href="#">
+                            <a id="anchorLetYouKnow" class="btn btn-primary btn-xl" href="#">
                                 Conoce nuestros productos!
                             </a>
                         </div>
@@ -162,5 +172,6 @@
         </footer>
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/scripts.js"></script>
+        <script src="js/lang.js"></script>
     </body>
 </html>
