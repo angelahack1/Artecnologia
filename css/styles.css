@@ -11217,3 +11217,227 @@ p {
 .address strong {
   font-size: 1.2rem;
 }
+
+/* Style added by ALM (AixKare Design) ... */
+/* { */
+  .nav-link-disabled-inside, 
+  .nav-link-disabled-inside:hover, 
+  .nav-link-disabled-inside:focus {
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: 800;
+    text-decoration: none;
+    color: var(--bs-primary);
+    pointer-events: none;
+    cursor: default;
+    transition: none;
+  }
+  
+  .nav-link-disabled-outside, 
+  .nav-link-disabled-outside:hover, 
+  .nav-link-disabled-outside:focus {
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: 800;
+    text-decoration: none;
+    color: var(--bs-gray);
+    pointer-events: none;
+    cursor: default;
+    transition: none;
+  }
+  
+  .contact-header {
+    text-align: left !important;
+  }
+  
+  .btn-xm {
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .label-invisible {
+      position: absolute;
+      left: -9999px;
+  }
+  
+  .extent-thanks {
+    margin-top: 100px;
+  }
+  
+  @media (min-width: 0px ) and (max-width: 1000px) {
+    .img-fluid {
+       width: 100%;
+       float: right;
+       position: relative;
+       z-index: auto;
+    }
+   }
+   
+  @media (min-width: 1001px) {
+    .img-fluid {
+       width: 60%;
+       float: right;
+       position: relative;
+       z-index: auto;
+    }
+   } 
+  
+@media (min-width: 992px) {
+  .about-heading .about-heading-img {
+    position: relative;
+    z-index: 0;
+  }
+  .about-heading .about-heading-content {
+    margin-top: -5rem;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 991px) {
+  .about-text {
+    width: 100%;
+    display: inline-block;
+  }
+  
+  .img-about {
+    width: 100%;
+    float: right;
+    position: relative;
+    z-index: 0;
+    margin-top: 0rem;
+  }
+  }
+  
+@media (min-width: 992px) {
+.about-text {
+  width: 60%;
+  display: inline-block;
+}
+
+.img-about {
+  width: 100%;
+  float: right;
+  position: absolute;
+  z-index: -1;
+  margin-top: 4rem;
+  margin-left: 4rem;
+}
+}
+
+.heading-about {
+  text-align: center !important;
+}
+
+.my-feat-padding {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.margin-bottom-20rem {
+  margin-bottom: 20rem;
+}
+
+.margin-bottom-5rem {
+  margin-bottom: 5rem;
+}
+
+.padding-2rem {
+  padding: 2rem;
+}
+
+.font-size-1rem {
+  font-size: 1rem;
+}
+
+.padding-1rem-both-sides {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.btn-black {
+  background-color: #000000;
+  padding-top: 12px;
+  padding-bottom: 2px;
+}
+
+.dropdown-flags {
+  position: absolute;
+  left: 150px;
+  top: 12px;
+}
+
+.dropdown-item-flags {
+  display: block;
+  width: 100%;
+  padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
+  clear: both;
+  font-weight: 600;
+  color: var(--bs-dropdown-link-color);
+  text-align: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: #505050;
+  border: 0;
+  font-family: system-ui;
+  font-size: 1rem;
+  background-color: #ffffff;
+}
+
+.flag-brasil {
+  display: inline-block;
+  content: '';
+  background: url("../assets/img/flags.webp") no-repeat;
+  width: 16px;
+  height: 16px;
+  background-position: 0px -728px;
+}
+
+.flag-mexico {
+  display: inline-block;
+  content: '';
+  background: url("../assets/img/flags.webp") no-repeat;
+  width: 16px;
+  height: 16px;
+  background-position: -72px 0px;
+}
+
+.flag-usa {
+  display: inline-block;
+  content: '';
+  background: url("../assets/img/flags.webp") no-repeat;
+  width: 16px;
+  height: 16px;
+  background-position: -72px -1950px;
+}
+.langer {
+  display: flex !important;
+  top: 0px !important;
+  left: 2rem;
+  margin-left: 0rem;
+  position: relative !important;
+  justify-content: right !important;
+  padding-right: 2rem !important;
+  align-items: start !important;
+  margin-left: 1rem;
+}
+
+.langer-button {
+  background-color: #2D1711 !important;
+  border-color: #777777 !important;
+}
+
+.langer-menu {
+  position: absolute !important;
+  top: 0rem !important;
+  margin-top: 39px !important;
+  left: -87px !important;
+  width: 87px !important;
+}
+/* } */
