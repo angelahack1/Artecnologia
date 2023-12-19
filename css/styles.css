@@ -11319,6 +11319,7 @@ p {
 .about-text {
   width: 60%;
   display: inline-block;
+  margin-bottom: 5rem;
 }
 
 .img-about {
@@ -11327,7 +11328,7 @@ p {
   position: absolute;
   z-index: -1;
   margin-top: 4rem;
-  margin-left: 4rem;
+  margin-left: -40rem;
 }
 }
 
