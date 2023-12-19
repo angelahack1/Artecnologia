@@ -72,16 +72,19 @@ function handleFormSubmit(event) {
     window.top.location.href = form.getAttribute('action')+'&from=artecnologia&email='+form.formControlMail.value+'&comment='+form.formControlTextarea.value;
  }
 
-function addValidationInClient() { 
+ function addValidationInClient() { 
     var form = document.getElementById("contactForm");
 
-    form.addEventListener("submit", function(event) {
-        if (!validateForm(form)) {
-            event.preventDefault();
-        } else {
-            handleFormSubmit(event);
-            event.preventDefault();
-            //window.top.location.href = "https://www.artecnologia.aixkare.com/thanks.html";
-        }
-    });
+    if(typeof form != 'undefined' && form != null) {
+        console.log("Validation of form is gonna be loaded...");
+        form.addEventListener("submit", function(event) {
+            if (!validateForm(form)) {
+                event.preventDefault();
+            } else {
+                handleFormSubmit(event);
+                event.preventDefault();
+            }
+        });
+        console.log("Validation of form loaded OK.");
+    }
 }
