@@ -324,7 +324,12 @@ class LanguageContainer {
                 this.changeHrefToAnchor($("#anchorProducts")[0], "products.html?lang=en");
                 this.changeHrefToAnchor($("#anchorStore")[0], "store.html?lang=en");
                 this.changeHrefToAnchor($("#anchorContact")[0], "contact.html?lang=en");
-
+                this.changeInnerTextToObject($("#mainTitleIndex")[0], this._textMainPageEng);
+                this.changeInnerTextToObject($("#mainTitleAbout")[0], this._textAboutPageEng);
+                this.changeInnerTextToObject($("#mainTitleProducts")[0], this._textProductsPageEng);
+                this.changeInnerTextToObject($("#mainTitleStore")[0], this._textStorePageEng);
+                this.changeInnerTextToObject($("#mainTitleThanks")[0], this._textContactPageEng);
+                this.changeInnerTextToObject($("#mainTitleContact")[0], this._textContactPageEng);
 
                 Cookies.set('lang', 'en', { expires: 7 });
             break;
@@ -369,6 +374,12 @@ class LanguageContainer {
                 this.changeHrefToAnchor($("#anchorProducts")[0], "products.html?lang=es");
                 this.changeHrefToAnchor($("#anchorStore")[0], "store.html?lang=es");
                 this.changeHrefToAnchor($("#anchorContact")[0], "contact.html?lang=es");
+                this.changeInnerTextToObject($("#mainTitleIndex")[0], this._textMainPageSpa);
+                this.changeInnerTextToObject($("#mainTitleAbout")[0], this._textAboutPageSpa);
+                this.changeInnerTextToObject($("#mainTitleProducts")[0], this._textProductsPageSpa);
+                this.changeInnerTextToObject($("#mainTitleStore")[0], this._textStorePageSpa);
+                this.changeInnerTextToObject($("#mainTitleThanks")[0], this._textContactPageSpa);
+                this.changeInnerTextToObject($("#mainTitleContact")[0], this._textContactPageSpa);
 
                 Cookies.set('lang', 'es', { expires: 7 });
             break;
@@ -412,6 +423,12 @@ class LanguageContainer {
                 this.changeHrefToAnchor($("#anchorProducts")[0], "products.html?lang=pt");
                 this.changeHrefToAnchor($("#anchorStore")[0], "store.html?lang=pt");
                 this.changeHrefToAnchor($("#anchorContact")[0], "contact.html?lang=pt");
+                this.changeInnerTextToObject($("#mainTitleIndex")[0], this._textMainPagePor);
+                this.changeInnerTextToObject($("#mainTitleAbout")[0], this._textAboutPagePor);
+                this.changeInnerTextToObject($("#mainTitleProducts")[0], this._textProductsPagePor);
+                this.changeInnerTextToObject($("#mainTitleStore")[0], this._textStorePagePor);
+                this.changeInnerTextToObject($("#mainTitleThanks")[0], this._textContactPagePor);
+                this.changeInnerTextToObject($("#mainTitleContact")[0], this._textContactPagePor);
 
                 Cookies.set('lang', 'pt', { expires: 7 });
             break;
