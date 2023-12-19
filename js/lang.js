@@ -49,66 +49,26 @@ class LanguageContainer {
         this._textAnchorLetYouKnowOurProductsEng = "Let you know our products!";
         this._textAnchorLetYouKnowOurProductsSpa = "Conoce nuestros productos!";
         this._textAnchorLetYouKnowOurProductsPor = "Conheça nossos produtos!";
+        this._textSpanOurProductsEng = "Our products";
+        this._textSpanOurProductsSpa = "Nuestros productos";
+        this._textSpanOurProductsPor = "Nossos produtos";
+        this._textSpanForYouAndEng = "For you or as a gift";
+        this._textSpanForYouAndSpa = "Para ti o para regalar";
+        this._textSpanForYouAndPor = "Para você ou como presente";
+        this._textParagraphWeHave1Eng = "We have a range of technological products with a touch of art that makes you do without the feeling of stress that technology usually generates.";
+        this._textParagraphWeHave1Spa = "Contamos con una gama de productos tecnológicos con un toque de arte que te hace prescindir de la sensación de estrés que usualmente genera la tecnología.";
+        this._textParagraphWeHave1Por = "Temos uma gama de produtos tecnológicos com um toque de arte que faz com que você passe sem a sensação de estresse que a tecnologia costuma gerar.";
+        this._textIWeHave2Eng = "Products focused on various sensations that provide well-being.";
+        this._textIWeHave2Spa = "Productos centrados en diversas sensaciones que brindan bienestar.";
+        this._textIWeHave2Por = "Produtos focados em diversas sensações que proporcionam bem-estar.";
+        this._textSpanHeadingAboutUpperEng = "Art, Comfort and Technology";
+        this._textSpanHeadingAboutUpperSpa = "Arte, Confort y Tecnología";
+        this._textSpanHeadingAboutUpperPor = "Arte, Conforto e Tecnologia";
+        this._textSpanHeadingAboutLowerEng = "About us";
+        this._textSpanHeadingAboutLowerSpa = "Acerca de nosotros";
+        this._textSpanHeadingAboutLowerPor = "Sobre nós";
 
 
-
-        this._textBannerAIEng = "AI eXtended for Healthcare.";
-        this._textBannerAISpa = "IA eXtendida para la Salud.";
-        this._textBannerAIPor = "IA estendida para saúde.";
-        this._textBannerContentAIEng = "Our products leverage AI to offer tailored services according to your needs.";
-        this._textBannerContentAISpa = "Nuestros productos aprovechan la IA para ofrecer servicios personalizados según tus necesidades.";
-        this._textBannerContentAIPor = "Nossos produtos aproveitam a IA para oferecer serviços personalizados de acordo com suas necessidades.";
-        this._textBannerComEng = "AI eXtended communications";
-        this._textBannerComSpa = "Comuncaciones extendidas con IA";
-        this._textBannerComPor = "Comunicações estendidas com IA";
-        this._textBannerContentComEng = "Our network communicates using the most advanced technology offering low latency and secure channels.";
-        this._textBannerContentComSpa = "Nuestra red se comunica utilizando la tecnología más avanzada ofreciendo baja latencia y canales seguros.";
-        this._textBannerContentComPor = "Nossa rede se comunica utilizando a tecnologia mais avançada, oferecendo baixa latência e canais seguros.";
-        this._textBannerSecEng = "AI eXtended cyber-secure technologies";
-        this._textBannerSecSpa = "Tecnologías cyber-seguras eXtendidas con IA";
-        this._textBannerSecPor = "Tecnologias ciberseguras ampliadas com IA";
-        this._textBannerContentSecEng = "The information over all the communications channels travels securely using the most advanced cyber-security infrastructure.";
-        this._textBannerContentSecSpa = "La información por todos los canales de comunicación viaja de forma segura utilizando la infraestructura de ciberseguridad más avanzada.";
-        this._textBannerContentSecPor = "As informações através de todos os canais de comunicação trafegam com segurança utilizando a mais avançada infraestrutura de segurança cibernética.";
-        this._textSpanCarouselPrevEng = "Previous";
-        this._textSpanCarouselPrevSpa = "Anterior";
-        this._textSpanCarouselPrevPor = "Anterior";
-        this._textSpanCarouselNextEng = "Next";
-        this._textSpanCarouselNextSpa = "Siguiente"
-        this._textSpanCarouselNextPor = "Próximo";
-        this._textRightsEng = "All rights reserved &copy; AixKare 2023";
-        this._textRightsSpa = "Todos los derechos reservados &copy; AixKare 2023";
-        this._textRightsPor = "Todos os direitos reservados &copy; AixKare 2023";
-        this._textAnchorExploreEng = "Explore our technologies";
-        this._textAnchorExploreSpa = "Explora nuestras tecnologías";
-        this._textAnchorExplorePor = "Explore nossas tecnologias";
-        this._textAnchorLearnComEng = "Learn More...";
-        this._textAnchorLearnComSpa = "Saber más...";
-        this._textAnchorLearnComPor = "Saber mais...";
-        this._textAnchorLearnSecEng = "Learn More...";
-        this._textAnchorLearnSecSpa = "Saber más...";
-        this._textAnchorLearnSecPor = "Saber mais...";
-        this._textHeaderConstructionEng = "This site is under construction";
-        this._textHeaderConstructionSpa = "Este sitio esta en construcción";
-        this._textHeaderConstructionPor = "Este site está em construção";
-        this._textHeaderWorkingEng = "We are working very, very hard...";
-        this._textHeaderWorkingSpa = "Estamos trabajando muy, muy duro...";
-        this._textHeaderWorkingPor = "Estamos trabalhando muito, muito duro...";
-        this._textParagraphWorkingEng = "In AIXKARE we are working hard to complete our start up process, in order to provide you with our services, ASAP.";
-        this._textParagraphWorkingSpa = "En AIXKARE estamos trabajando duro, completando nuestro proceso de establecimiento, para poder ofrecerte nuestros servicios, tan pronto como sea posible.";
-        this._textParagraphWorkingPor = "Na AIXKARE estamos a trabalhar arduamente, concluindo o nosso processo de constituição, para podermos oferecer-lhe os nossos serviços o mais rapidamente possível.";
-        this._textHeaderAboutEng = "Artificial Intelligence eXtended for K(c)are (AIXKARE)";
-        this._textHeaderAboutSpa = "Artificial Intelligence eXtended for K(c)are (AIXKARE)";
-        this._textHeaderAboutPor = "Artificial Intelligence eXtended for K(c)are (AIXKARE)";
-        this._textSubHeaderAboutEng = "About us";
-        this._textSubHeaderAboutSpa = "Acerca de nosotros";
-        this._textSubHeaderAboutPor = "Sobre nós";
-        this._textParagraphAboutEng = "Company founded in 2019, whose mission is to provide well-being to our customers through technological products focused on Healthcare.";
-        this._textParagraphAboutSpa = "Empresa fundada en 2019, cuya misión es brindar bienestar a nuestros clientes a través de productos tecnológicos enfocados al Cuidado de la Salud.";
-        this._textParagraphAboutPor = "Empresa fundada em 2019, que tem como missão proporcionar bem-estar aos nossos clientes através de produtos tecnológicos focados em Healthcare.";
-        this._textParagraphInnerAboutEng = "We help you to be safe, and/or take care of those who matter most to you.";
-        this._textParagraphInnerAboutSpa = "Te ayudamos a estar seguro y/o cuidar a quienes más te importan.";
-        this._textParagraphInnerAboutPor = "Ajudamos você a estar seguro e/ou a cuidar daqueles que são mais importantes para você.";
         this._textSpanHeadingContactEng = "Wanna know more?...";
         this._textSpanHeadingContactSpa = "¿Quieres saber más?...";
         this._textSpanHeadingContactPor = "Você quer saber mais?...";
@@ -316,7 +276,7 @@ class LanguageContainer {
         this.changeContentLang("span-flag", this.getActualLangOnActualLang());
         switch(this.lang) {
             case 'en':
-                //$("#i-flag").attr("class","flag-usa flag m-0");
+                $("#i-flag").attr("class","flag-usa flag m-0");
                 this.changeInnerTextToObject($("#companyAcronim")[0],this._companyAcronimEng);
                 this.changeInnerTextToObject($("#companyName")[0],this._companyNameEng);
                 this.changeInnerTextToObject($("#navCompanyName")[0],this._companyNameEng);
@@ -330,71 +290,19 @@ class LanguageContainer {
                 this.changeInnerTextToObject($("#spanHeadingLower")[0], this._textSpanHeadingLowerEng);
                 this.changeInnerTextToObject($("#paragraphIntro")[0], this._textParagraphIntroEng);
                 this.changeInnerTextToObject($("#anchorLetYouKnow")[0], this._textAnchorLetYouKnowOurProductsEng);
+                this.changeInnerTextToObject($("#ourProducts")[0], this._textSpanOurProductsEng);
+                this.changeInnerTextToObject($("#forYouAnd")[0], this._textSpanForYouAndEng);
+                this.changeInnerTextToObject($("#weHave1")[0], this._textParagraphWeHave1Eng);
+                this.changeInnerTextToObject($("#weHave2")[0], this._textIWeHave2Eng);
+                this.changeInnerTextToObject($("#spanHeadingAboutUpper")[0], this._textSpanHeadingAboutUpperEng);
+                this.changeInnerTextToObject($("#spanHeadingAboutLower")[0], this._textSpanHeadingAboutLowerEng);
+                
 
 
-
-
-/*
-
-        this._textSpanHeadingUpperEng = "Art of";
-        this._textSpanHeadingUpperSpa = "Arte de";
-        this._textSpanHeadingUpperpor = "Arte de";
-        this._textSpanHeadingLowerEng = "Owing and/or Giving";
-        this._textSpanHeadingLowerSpa = "Tener y/o Regalar";
-        this._textSpanHeadingLowerpor = "Ter e/ou Dar";
-        this._textParagraphIntroEng = "With a cultural special touch, and technological usage, through products which inspires your sense of belonging and comfort.";
-        this._textParagraphIntroSpa = "Con un sentido cultural y usabilidad tecnológica, a través de productos que inspiran tu pertenencia y confort.";
-        this._textParagraphIntroPor = "Com sentido cultural e usabilidade tecnológica, através de produtos que inspiram o seu pertencimento e conforto.";
-
-*/
-
-/*
-                this.changeInnerTextToObject($("#home")[0],this._textMainPageEng);
-                this.changeInnerTextToObject($("#about")[0],this._textAboutPageEng);
-                this.changeInnerTextToObject($("#products")[0],this._textProductsPageEng);
-                this.changeInnerTextToObject($("#contact")[0],this._textContactPageEng);
-                this.changeInnerTextToObject($("#bannerAI")[0],this._textBannerAIEng);
-                this.changeInnerTextToObject($("#bannerContentAI")[0],this._textBannerContentAIEng);
-                this.changeInnerTextToObject($("#bannerCom")[0],this._textBannerComEng);
-                this.changeInnerTextToObject($("#bannerContentCom")[0],this._textBannerContentComEng);
-                this.changeInnerTextToObject($("#bannerSec")[0],this._textBannerSecEng);
-                this.changeInnerTextToObject($("#bannerContentSec")[0],this._textBannerContentSecEng);
-                this.changeInnerTextToObject($("#spanCarouselPrev")[0],this._textSpanCarouselPrevEng);
-                this.changeInnerTextToObject($("#spanCarouselNext")[0],this._textSpanCarouselNextEng);
-                this.changeInnerHtmlToObject($("#rights")[0],this._textRightsEng);
-                this.changeInnerTextToObject($("#anchorExplore")[0],this._textAnchorExploreEng);
-                this.changeInnerTextToObject($("#anchorLearnCom")[0],this._textAnchorLearnComEng);
-                this.changeInnerTextToObject($("#anchorLearnSec")[0],this._textAnchorLearnSecEng);
-                this.changeInnerTextToObject($("#construction-header")[0],this._textHeaderConstructionEng);
-                this.changeInnerTextToObject($("#working-header")[0],this._textHeaderWorkingEng);
-                this.changeInnerTextToObject($("#working-text")[0],this._textParagraphWorkingEng);
-                this.changeInnerTextToObject($("#spanHeaderAbout")[0], this._textHeaderAboutEng);
-                this.changeInnerTextToObject($("#spanSubHeaderAbout")[0], this._textSubHeaderAboutEng);
-                this.changeInnerTextToObject($("#paragraphAbout")[0], this._textParagraphAboutEng);
-                this.changeInnerTextToObject($("#paragraphInnerAbout")[0], this._textParagraphInnerAboutEng);
-                this.changeInnerTextToObject($("#spanHeadingContact")[0], this._textSpanHeadingContactEng);
-                this.changeInnerTextToObject($("#spanSubHeadingContact")[0], this._textSpanSubHeadingContactEng);
-                this.changeInnerTextToObject($("#labelEmail")[0], this._textLabelEmailEng);
-                this.changeInnerTextToObject($("#labelText")[0], this._textLabelTextEng);
-                this.changeInnerTextToObject($("#labelSend")[0], this._textButtonSendEng);
-                this.changePlaceholderToObject($("#inputEmail")[0], this._placeholderEmailEng);
-                this.changePlaceholderToObject($("#textText")[0], this._placeholderTextEng);
-                this.changeInnerTextToObject($("#buttonSend")[0], this._textButtonSendEng);
-                this.changeHrefToAnchor($("#home")[0], "index.html?lang=en");
-                this.changeHrefToAnchor($("#about")[0], "about.html?lang=en");
-                this.changeHrefToAnchor($("#products")[0], "prodandserv.html?lang=en");
-                this.changeHrefToAnchor($("#contact")[0], "contact.html?lang=en");
-                this.changeInnerTextToObject($("#spanHeaderThanks")[0], this._textSpanThanksEng);
-                this.changeInnerTextToObject($("#spanContentThanks")[0], this._textSpanContentThanksEng);
-                this.changeInnerTextToObject($("#back2MainPage")[0], this._textBack2MainPageEng);
-                this.changeHrefToAnchor($("#back2MainPage")[0], "index.html?lang=en");
-                this.changeHrefToAnchor($("#anchor-logo")[0], "index.html?lang=en");
-                this.changeActionToForm($("#contactForm")[0], "https://j6wrsf4g5k.execute-api.us-east-1.amazonaws.com/interaction/interaction?lang=en");
-                */
                 Cookies.set('lang', 'en', { expires: 7 });
             break;
             case 'es':
-                //$("#i-flag").attr("class","flag-mexico flag m-0");
+                $("#i-flag").attr("class","flag-mexico flag m-0");
                 this.changeInnerTextToObject($("#companyAcronim")[0],this._companyAcronimSpa);
                 this.changeInnerTextToObject($("#companyName")[0],this._companyNameSpa);
                 this.changeInnerTextToObject($("#navCompanyName")[0],this._companyNameSpa);
@@ -408,12 +316,17 @@ class LanguageContainer {
                 this.changeInnerTextToObject($("#spanHeadingLower")[0], this._textSpanHeadingLowerSpa);
                 this.changeInnerTextToObject($("#paragraphIntro")[0], this._textParagraphIntroSpa);
                 this.changeInnerTextToObject($("#anchorLetYouKnow")[0], this._textAnchorLetYouKnowOurProductsSpa);
-
+                this.changeInnerTextToObject($("#ourProducts")[0], this._textSpanOurProductsSpa);
+                this.changeInnerTextToObject($("#forYouAnd")[0], this._textSpanForYouAndSpa);
+                this.changeInnerTextToObject($("#weHave1")[0], this._textParagraphWeHave1Spa);
+                this.changeInnerTextToObject($("#weHave2")[0], this._textIWeHave2Spa);
+                this.changeInnerTextToObject($("#spanHeadingAboutUpper")[0], this._textSpanHeadingAboutUpperSpa);
+                this.changeInnerTextToObject($("#spanHeadingAboutLower")[0], this._textSpanHeadingAboutLowerSpa);
 
                 Cookies.set('lang', 'es', { expires: 7 });
             break;
             case 'pt':
-                //$("#i-flag").attr("class","flag-brasil flag m-0");
+                $("#i-flag").attr("class","flag-brasil flag m-0");
                 this.changeInnerTextToObject($("#companyAcronim")[0],this._companyAcronimPor);
                 this.changeInnerTextToObject($("#companyName")[0],this._companyNamePor);
                 this.changeInnerTextToObject($("#navCompanyName")[0],this._companyNamePor);
@@ -427,6 +340,12 @@ class LanguageContainer {
                 this.changeInnerTextToObject($("#spanHeadingLower")[0], this._textSpanHeadingLowerPor);
                 this.changeInnerTextToObject($("#paragraphIntro")[0], this._textParagraphIntroPor);
                 this.changeInnerTextToObject($("#anchorLetYouKnow")[0], this._textAnchorLetYouKnowOurProductsPor);
+                this.changeInnerTextToObject($("#ourProducts")[0], this._textSpanOurProductsPor);
+                this.changeInnerTextToObject($("#forYouAnd")[0], this._textSpanForYouAndPor);
+                this.changeInnerTextToObject($("#weHave1")[0], this._textParagraphWeHave1Por);
+                this.changeInnerTextToObject($("#weHave2")[0], this._textIWeHave2Por);
+                this.changeInnerTextToObject($("#spanHeadingAboutUpper")[0], this._textSpanHeadingAboutUpperPor);
+                this.changeInnerTextToObject($("#spanHeadingAboutLower")[0], this._textSpanHeadingAboutLowerPor);
 
 
                 Cookies.set('lang', 'pt', { expires: 7 });
