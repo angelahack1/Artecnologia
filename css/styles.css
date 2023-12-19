@@ -11440,4 +11440,10 @@ p {
   left: -87px !important;
   width: 87px !important;
 }
+
+.font-size-1rem {
+  font-size: 1rem;
+}
+
+
 /* } */
