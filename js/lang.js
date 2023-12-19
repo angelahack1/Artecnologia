@@ -330,6 +330,7 @@ class LanguageContainer {
                 this.changeInnerTextToObject($("#mainTitleStore")[0], this._textStorePageEng);
                 this.changeInnerTextToObject($("#mainTitleThanks")[0], this._textContactPageEng);
                 this.changeInnerTextToObject($("#mainTitleContact")[0], this._textContactPageEng);
+                this.changeActionToForm($("#contactForm")[0], "https://j6wrsf4g5k.execute-api.us-east-1.amazonaws.com/interaction/interaction?lang=en");
 
                 Cookies.set('lang', 'en', { expires: 7 });
             break;
@@ -380,6 +381,7 @@ class LanguageContainer {
                 this.changeInnerTextToObject($("#mainTitleStore")[0], this._textStorePageSpa);
                 this.changeInnerTextToObject($("#mainTitleThanks")[0], this._textContactPageSpa);
                 this.changeInnerTextToObject($("#mainTitleContact")[0], this._textContactPageSpa);
+                this.changeActionToForm($("#contactForm")[0], "https://j6wrsf4g5k.execute-api.us-east-1.amazonaws.com/interaction/interaction?lang=es");
 
                 Cookies.set('lang', 'es', { expires: 7 });
             break;
@@ -429,6 +431,7 @@ class LanguageContainer {
                 this.changeInnerTextToObject($("#mainTitleStore")[0], this._textStorePagePor);
                 this.changeInnerTextToObject($("#mainTitleThanks")[0], this._textContactPagePor);
                 this.changeInnerTextToObject($("#mainTitleContact")[0], this._textContactPagePor);
+                this.changeActionToForm($("#contactForm")[0], "https://j6wrsf4g5k.execute-api.us-east-1.amazonaws.com/interaction/interaction?lang=pt");
 
                 Cookies.set('lang', 'pt', { expires: 7 });
             break;
