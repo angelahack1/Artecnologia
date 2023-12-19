@@ -25,38 +25,53 @@
     <body>
         <header>
             <h1 class="site-heading text-center text-faded d-none d-lg-block">
-                <span class="site-heading-upper text-primary mb-3">
+                <span id="companyAcronim" class="site-heading-upper text-primary mb-3">
                     Artecnología
                 </span>
-                <span class="site-heading-lower">
+                <span id="companyName" class="site-heading-lower">
                     Arte y Tecnología juntos
                 </span>
             </h1>
         </header>
         <nav class="row navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
             <div class="col-10 container">
-                <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">Artecnología</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <a id="navCompanyName" class="navbar-brand 
+                       text-uppercase 
+                       fw-bold 
+                       d-lg-none" 
+                       href="index.html">Artecnología
+                </a>
+                <button class="navbar-toggler" 
+                        type="button" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#navbarSupportedContent" 
+                        aria-controls="navbarSupportedContent" 
+                        aria-expanded="false" 
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                        </span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item px-lg-4">
-                            <a class="nav-link text-uppercase" 
-                            href="index.html">Páginal principal</a>
+                            <a id="anchorMainPage" class="nav-link text-uppercase" href="index.html?lang=es">
+                                Páginal principal</a>
                         </li>
                         <li class="nav-item px-lg-4">
-                            <a class="nav-link text-uppercase" 
-                            href="about.html">Acerca de Artecnología</a>
+                            <a id="anchorAbout" class="nav-link text-uppercase" href="about.html?lang=es">
+                                Acerca de Artecnología</a>
                         </li>
                         <li class="nav-item px-lg-4">
-                            <a class="nav-link-disabled-outside text-uppercase" 
-                            href="products.html">Productos</a>
+                            <a id="anchorProducts" class="nav-link-disabled-outside text-uppercase" href="products.html?lang=es">
+                                Productos</a>
                         </li>
                         <li class="nav-item px-lg-4">
-                            <a class="nav-link-disabled-outside text-uppercase"
-                            href="store.html">Tienda</a>
+                            <a id="anchorStore" class="nav-link-disabled-outside text-uppercase" href="store.html?lang=es">
+                                Tienda</a>
                         </li>
                         <li class="nav-item px-lg-4">
-                            <a class="nav-link-disabled-inside text-uppercase">Contacto</a>
+                            <a id="anchorContact" class="nav-link-disabled-inside text-uppercase" href="contact.html?lang=es">
+                                Contacto </a>
                         </li>
                     </ul>
                 </div>
@@ -88,21 +103,21 @@
                     <div class="col-xl-9 mx-auto">
                         <div class="cta-inner bg-faded rounded">
                             <h2 class="section-heading text-center mb-5">
-                                <span class="section-heading-upper">Mandanos una consulta, duda o comentario</span>
-                                <span class="section-heading-lower">Estamos a tus ordenes</span>
+                                <span id="headingContact" class="section-heading-upper">Mandanos una consulta, duda o comentario</span>
+                                <span id="subHeadingContact" class="section-heading-lower">Estamos a tus ordenes</span>
                             </h2>
                             <form id="contactForm" action="https://j6wrsf4g5k.execute-api.us-east-1.amazonaws.com/interaction/interaction?lang=es">
                                 <div class="mb-3">
-                                    <label for="formControlInputMail" class="contact-header text-start form-label">Dirección de correo:</label>
-                                    <input type="email" class="form-control" id="formControlInputMail" name="formControlMail" placeholder="nombre@dominio.com">
+                                    <label id="labelEmail" for="formControlInputMail" class="contact-header text-start form-label">Dirección de correo:</label>
+                                    <input id="inputEmail" type="email" class="form-control" id="formControlInputMail" name="formControlMail" placeholder="nombre@dominio.com">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="formControlInputTextarea" class="contact-header text-start form-label">Consulta, duda o comentario:</label>
-                                    <textarea type="textarea"  class="form-control" id="formControlInputTextarea" name="formControlTextarea" rows="3" placeholder="Mi duda o comentario es..."></textarea>
+                                    <label id="labelText" for="formControlInputTextarea" class="contact-header text-start form-label">Consulta, duda o comentario:</label>
+                                    <textarea id="inputText" type="textarea"  class="form-control" id="formControlInputTextarea" name="formControlTextarea" rows="3" placeholder="Mi duda o comentario es..."></textarea>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="submitButton" class="label-invisible">Boton para enviar:</label>
-                                    <button class="btn btn-primary btn-xm" rows="2" type="submit" id="submitButton">Enviar</button>
+                                    <label id="labelToSend" for="submitButton" class="label-invisible">Boton para enviar:</label>
+                                    <button id="inputToSend" class="btn btn-primary btn-xm" rows="2" type="submit" id="submitButton">Enviar</button>
                                 </div>
                             </form>
                         </div>
@@ -120,12 +135,12 @@
                                 p-5
                                 rounded">
                         <h2 class="section-heading mb-9 heading-about">
-                            <span class="section-heading-upper">Arte, Confort y Tecnología</span>
-                            <span class="section-heading-lower">Acerca de Nosotros</span>
+                            <span id="spanHeadingAboutUpper" class="section-heading-upper">Arte, Confort y Tecnología</span>
+                            <span id="spanHeadingAboutLower" class="section-heading-lower">Acerca de Nosotros</span>
                         </h2>
-                        <p class="font-size-1rem">Compañia fundada en 2019, cuya misión es proporcionar bienestar a nuestros clientes a través de productos tecnológicos basados en temas artísticos y culturales.</p>
-                        <p class="font-size-1rem">Nuestra visión es cubrir paulatinamente la necesidad de contar con tecnología que brinde tranquilidad, alegría y confort, contibuyendo a la disminución del stress que usualmente acarrea el uso de la tecnología.</p>
-                        <p class="font-size-1rem">
+                        <p id="mission" class="font-size-1rem">Compañia fundada en 2019, cuya misión es proporcionar bienestar a nuestros clientes a través de productos tecnológicos basados en temas artísticos y culturales.</p>
+                        <p id="vision" class="font-size-1rem">Nuestra visión es cubrir paulatinamente la necesidad de contar con tecnología que brinde tranquilidad, alegría y confort, contibuyendo a la disminución del stress que usualmente acarrea el uso de la tecnología.</p>
+                        <p id="warranty" class="font-size-1rem">
                             Garantizamos que puedas
                             <em> disfrutar y/o proporcionar </em>
                             momentos gratos con nuestros productos, que basados en conceptos culturales y artísticos, te proporcionen binestar a tí y a los tuyos.
@@ -136,7 +151,7 @@
             </div>
         </section>
         <footer class="footer text-faded text-center py-5">
-            <div class="container"><p class="m-0 small">
+            <div class="container"><p id="rights" class="m-0 small">
                 All rights reserved &copy; AixKare 2023
             </p></div>
         </footer>

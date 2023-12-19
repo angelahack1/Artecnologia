@@ -67,8 +67,27 @@ class LanguageContainer {
         this._textSpanHeadingAboutLowerEng = "About us";
         this._textSpanHeadingAboutLowerSpa = "Acerca de nosotros";
         this._textSpanHeadingAboutLowerPor = "Sobre nós";
-
-
+        this._htmlParagraphRightsEng = "All rights reserved &copy; AixKare 2023";
+        this._htmlParagraphRightsSpa = "Derechos reservados &copy; AixKare 2023";
+        this._htmlParagraphRightsPor = "Todos os direitos reservados &copy; AixKare 2023";
+        this._textParagraphMissionEng = "Company founded in 2019, whose mission is to provide well-being to our customers through technological products based on artistic and cultural themes.";
+        this._textParagraphMissionSpa = "Compañia fundada en 2019, cuya misión es proporcionar bienestar a nuestros clientes a través de productos tecnológicos basados en temas artísticos y culturales.";
+        this._textParagraphMissionPor = "Empresa fundada em 2019, que tem como missão proporcionar bem-estar aos nossos clientes através de produtos tecnológicos baseados em temáticas artísticas e culturais.";
+        this._textParagraphVisionEng = "Our vision is to gradually cover the need for technology that provides tranquility, joy and comfort, contributing to the reduction of stress that usually comes with the use of technology.";
+        this._textParagraphVisionSpa = "Nuestra visión es cubrir paulatinamente la necesidad de contar con tecnología que brinde tranquilidad, alegría y confort, contibuyendo a la disminución del stress que usualmente acarrea el uso de la tecnología.";
+        this._textParagraphVisionPor = "Nossa visão é suprir gradativamente a necessidade de tecnologia que proporcione tranquilidade, alegria e conforto, contribuindo para a redução do estresse que normalmente acompanha o uso da tecnologia.";
+        this._htmlParagraphWarrantyEng = "We guarantee that you <em> can enjoy and/or provide </em> pleasant moments with our products, which, based on cultural and artistic concepts, provide well-being for you and your loved ones.";
+        this._htmlParagraphWarrantySpa = "Garantizamos que puedas <em> disfrutar y/o proporcionar </em> momentos gratos con nuestros productos, que basados en conceptos culturales y artísticos, te proporcionen binestar a tí y a los tuyos.";
+        this._htmlParagraphWarrantyPor = "Garantimos que você poderá <em> desfrutar e/ou proporcionar </em> momentos agradáveis com nossos produtos, que, baseados em conceitos culturais e artísticos, proporcionam bem-estar para você e seus entes queridos.";
+        this._textSpanThanksEng = "Thanks!";
+        this._textSpanThanksSpa = "Gracias!";
+        this._textSpanThanksPor = "Obrigado!";
+        this._textSpanWeReceivedEng = "We have received your comments.";
+        this._textSpanWeReceivedSpa = "Hemos recibido tus comentarios.";
+        this._textSpanWeReceivedPor = "Recebemos seus comentários.";
+        this._textBack2MainPageEng = "Back to main page...";
+        this._textBack2MainPageSpa = "Regresar a página principal...";
+        this._textBack2MainPagePor = "Retornar à página principal...";
         this._textSpanHeadingContactEng = "Wanna know more?...";
         this._textSpanHeadingContactSpa = "¿Quieres saber más?...";
         this._textSpanHeadingContactPor = "Você quer saber mais?...";
@@ -93,16 +112,6 @@ class LanguageContainer {
         this._textButtonSendEng = "Send";
         this._textButtonSendSpa = "Enviar";
         this._textButtonSendPor = "Enviar";
-        this._textSpanThanksEng = "Thanks!";
-        this._textSpanThanksSpa = "Gracias!";
-        this._textSpanThanksPor = "Obrigado!";
-        this._textSpanContentThanksEng = "We have received your comments.";
-        this._textSpanContentThanksSpa = "Hemos recibido tus comentarios.";
-        this._textSpanContentThanksPor = "Recebemos seus comentários.";
-        this._textBack2MainPageEng = "Back to main page...";
-        this._textBack2MainPageSpa = "Regresar a página principal...";
-        this._textBack2MainPagePor = "Retornar à página principal...";
-
         console.log("LanguageContainer Object setted!, actual Lang: <"+langP+">");
     }
 
@@ -296,7 +305,25 @@ class LanguageContainer {
                 this.changeInnerTextToObject($("#weHave2")[0], this._textIWeHave2Eng);
                 this.changeInnerTextToObject($("#spanHeadingAboutUpper")[0], this._textSpanHeadingAboutUpperEng);
                 this.changeInnerTextToObject($("#spanHeadingAboutLower")[0], this._textSpanHeadingAboutLowerEng);
-                
+                this.changeInnerHtmlToObject($("#rights")[0], this._htmlParagraphRightsEng);
+                this.changeInnerTextToObject($("#mission")[0], this._textParagraphMissionEng);
+                this.changeInnerTextToObject($("#vision")[0], this._textParagraphVisionEng);
+                this.changeInnerHtmlToObject($("#warranty")[0], this._htmlParagraphWarrantyEng);
+                this.changeInnerTextToObject($("#thanks")[0], this._textSpanThanksEng);
+                this.changeInnerTextToObject($("#weReceived")[0], this._textSpanWeReceivedEng);
+                this.changeInnerTextToObject($("#back2MainPage")[0], this._textBack2MainPageEng);
+                this.changeInnerTextToObject($("#headingContact")[0], this._textSpanHeadingContactEng);
+                this.changeInnerTextToObject($("#subHeadingContact")[0], this._textSpanSubHeadingContactEng);
+                this.changeInnerTextToObject($("#labelEmail")[0], this._textLabelEmailEng);
+                this.changeInnerTextToObject($("#labelText")[0], this._textLabelTextEng);
+                this.changePlaceholderToObject($("#inputEmail")[0], this._placeholderEmailEng);
+                this.changePlaceholderToObject($("#inputText")[0], this._placeholderTextEng);
+                this.changeInnerTextToObject($("#inputToSend")[0], this._textButtonSendEng);
+                this.changeHrefToAnchor($("#anchorMainPage")[0], "index.html?lang=en");
+                this.changeHrefToAnchor($("#anchorAbout")[0], "about.html?lang=en");
+                this.changeHrefToAnchor($("#anchorProducts")[0], "products.html?lang=en");
+                this.changeHrefToAnchor($("#anchorStore")[0], "store.html?lang=en");
+                this.changeHrefToAnchor($("#anchorContact")[0], "contact.html?lang=en");
 
 
                 Cookies.set('lang', 'en', { expires: 7 });
@@ -322,6 +349,26 @@ class LanguageContainer {
                 this.changeInnerTextToObject($("#weHave2")[0], this._textIWeHave2Spa);
                 this.changeInnerTextToObject($("#spanHeadingAboutUpper")[0], this._textSpanHeadingAboutUpperSpa);
                 this.changeInnerTextToObject($("#spanHeadingAboutLower")[0], this._textSpanHeadingAboutLowerSpa);
+                this.changeInnerHtmlToObject($("#rights")[0], this._htmlParagraphRightsSpa);
+                this.changeInnerTextToObject($("#mission")[0], this._textParagraphMissionSpa);
+                this.changeInnerTextToObject($("#vision")[0], this._textParagraphVisionSpa);
+                this.changeInnerHtmlToObject($("#warranty")[0], this._htmlParagraphWarrantySpa);
+                this.changeInnerTextToObject($("#thanks")[0], this._textSpanThanksSpa);
+                this.changeInnerTextToObject($("#back2MainPage")[0], this._textBack2MainPageSpa);
+                this.changeInnerTextToObject($("#weReceived")[0], this._textSpanWeReceivedSpa);
+                this.changeInnerTextToObject($("#headingContact")[0], this._textSpanHeadingContactSpa);
+                this.changeInnerTextToObject($("#subHeadingContact")[0], this._textSpanSubHeadingContactSpa);
+                this.changeInnerTextToObject($("#labelEmail")[0], this._textLabelEmailSpa);
+                this.changeInnerTextToObject($("#labelText")[0], this._textLabelTextSpa);
+                this.changePlaceholderToObject($("#inputEmail")[0], this._placeholderEmailSpa);
+                this.changePlaceholderToObject($("#inputText")[0], this._placeholderTextSpa);
+                this.changePlaceholderToObject($("#inputToSend")[0], this._placeholderTextSpa);
+                this.changeInnerTextToObject($("#inputToSend")[0], this._textButtonSendSpa);
+                this.changeHrefToAnchor($("#anchorMainPage")[0], "index.html?lang=es");
+                this.changeHrefToAnchor($("#anchorAbout")[0], "about.html?lang=es");
+                this.changeHrefToAnchor($("#anchorProducts")[0], "products.html?lang=es");
+                this.changeHrefToAnchor($("#anchorStore")[0], "store.html?lang=es");
+                this.changeHrefToAnchor($("#anchorContact")[0], "contact.html?lang=es");
 
                 Cookies.set('lang', 'es', { expires: 7 });
             break;
@@ -346,7 +393,25 @@ class LanguageContainer {
                 this.changeInnerTextToObject($("#weHave2")[0], this._textIWeHave2Por);
                 this.changeInnerTextToObject($("#spanHeadingAboutUpper")[0], this._textSpanHeadingAboutUpperPor);
                 this.changeInnerTextToObject($("#spanHeadingAboutLower")[0], this._textSpanHeadingAboutLowerPor);
-
+                this.changeInnerHtmlToObject($("#rights")[0], this._htmlParagraphRightsPor);
+                this.changeInnerTextToObject($("#mission")[0], this._textParagraphMissionPor);
+                this.changeInnerTextToObject($("#vision")[0], this._textParagraphVisionPor);
+                this.changeInnerHtmlToObject($("#warranty")[0], this._htmlParagraphWarrantyPor);
+                this.changeInnerTextToObject($("#thanks")[0], this._textSpanThanksPor);
+                this.changeInnerTextToObject($("#back2MainPage")[0], this._textBack2MainPagePor);
+                this.changeInnerTextToObject($("#weReceived")[0], this._textSpanWeReceivedPor);
+                this.changeInnerTextToObject($("#headingContact")[0], this._textSpanHeadingContactPor);
+                this.changeInnerTextToObject($("#subHeadingContact")[0], this._textSpanSubHeadingContactPor);
+                this.changeInnerTextToObject($("#labelEmail")[0], this._textLabelEmailPor);
+                this.changeInnerTextToObject($("#labelText")[0], this._textLabelTextPor);
+                this.changePlaceholderToObject($("#inputEmail")[0], this._placeholderEmailPor);
+                this.changePlaceholderToObject($("#inputText")[0], this._placeholderTextPor);
+                this.changeInnerTextToObject($("#inputToSend")[0], this._textButtonSendPor);
+                this.changeHrefToAnchor($("#anchorMainPage")[0], "index.html?lang=pt");
+                this.changeHrefToAnchor($("#anchorAbout")[0], "about.html?lang=pt");
+                this.changeHrefToAnchor($("#anchorProducts")[0], "products.html?lang=pt");
+                this.changeHrefToAnchor($("#anchorStore")[0], "store.html?lang=pt");
+                this.changeHrefToAnchor($("#anchorContact")[0], "contact.html?lang=pt");
 
                 Cookies.set('lang', 'pt', { expires: 7 });
             break;

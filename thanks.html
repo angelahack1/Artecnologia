@@ -51,49 +51,30 @@
                         <span class="navbar-toggler-icon">
                         </span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" 
+                     id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item px-lg-4">
-                            <a id="anchorMainPage" class="nav-link text-uppercase" 
-                            href="index.html">Páginal principal</a>
+                            <a id="anchorMainPage" class="nav-link text-uppercase" href="index.html?lang=es">
+                                Páginal principal</a>
                         </li>
                         <li class="nav-item px-lg-4">
-                            <a id="anchorAbout" class="nav-link text-uppercase"
-                            href="about.html">Acerca de Artecnología</a>
+                            <a id="anchorAbout" class="nav-link text-uppercase" href="about.html?lang=es">
+                                Acerca de Artecnología</a>
                         </li>
                         <li class="nav-item px-lg-4">
-                            <a id="anchorProducts" class="nav-link-disabled-outside text-uppercase" 
-                            href="products.html">Productos</a>
+                            <a id="anchorProducts" class="nav-link-disabled-outside text-uppercase" href="products.html?lang=es">
+                                Productos</a>
                         </li>
                         <li class="nav-item px-lg-4">
-                            <a id="anchorStore" class="nav-link-disabled-outside text-uppercase" 
-                            href="store.html">Tienda</a>
+                            <a id="anchorStore" class="nav-link-disabled-outside text-uppercase" href="store.html?lang=es">
+                                Tienda</a>
                         </li>
                         <li class="nav-item px-lg-4">
-                            <a id="anchorContact" class="nav-link-disabled-inside text-uppercase" 
-                            href="contact.html">Contacto</a>
+                            <a id="anchorContact" class="nav-link text-uppercase" href="contact.html?lang=es">
+                                Contacto</a>
                         </li>
                     </ul>
-                </div>
-                <div class="col-1 container langer" >
-                    <button class="btn btn-secondary dropdown-toggle btn-black langer-button" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <span id="span-flag" class="visually-hidden">English</span>
-                      <i id="i-flag" class="flag-usa flag m-0"></i>
-                    </button>
-                    <div class="dropdown-menu langer-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item-flags" href="#" onclick="_langContainer.refactorPageLanguage('en');">
-                        <span id="spanEng">English</span>
-                        <i class="flag-usa flag m-0"></i>
-                      </a>
-                      <a class="dropdown-item-flags" href="#" onclick="_langContainer.refactorPageLanguage('es');">
-                        <span id="spanSpa">Spanish</span>
-                        <i class="flag-mexico flag m-0"></i>
-                      </a>
-                      <a class="dropdown-item-flags" href="#" onclick="_langContainer.refactorPageLanguage('pt');">
-                        <span id="spanPor">Portuguese</span>
-                        <i class="flag-brasil flag m-0"></i>
-                      </a>
-                    </div>
                 </div>
             </div>
             <div class="col-1 container langer" >
@@ -124,10 +105,10 @@
                         <div class="col-xl-9 col-lg-10 mx-auto">
                             <div class="bg-faded rounded p-5">
                                 <h2 class="section-heading mb-4">
-                                    <span class="section-heading-upper">Gracias!</span>
-                                    <span class="section-heading-lower">Hemos recibido tus dudas o comentarios</span>
+                                    <span id="thanks" class="section-heading-upper">Gracias!</span>
+                                    <span id="weReceived" class="section-heading-lower">Hemos recibido tus dudas o comentarios</span>
                                 </h2>
-                                <a class="btn btn-primary btn-xl" href="index.html">
+                                <a id="back2MainPage" class="btn btn-primary btn-xl" href="index.html">
                                     Regresar a página principal
                                 </a>
                             </div>
@@ -137,7 +118,7 @@
             </div>
         </section>
         <footer class="footer text-faded text-center py-5">
-            <div class="container"><p class="m-0 small">
+            <div class="container"><p id="rights" class="m-0 small">
                 All rights reserved &copy; AixKare 2023
             </p></div>
         </footer>
